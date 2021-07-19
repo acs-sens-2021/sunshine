@@ -80,10 +80,22 @@ a {
     color: white;
     text-decoration: none;
     height: 30px;
+    width:50%;
     /* border: white solid 3px; */
     cursor: pointer;
 }
 
+a.btn_hotel {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(243, 41, 41);
+    height: 50px;
+    width:80px;
+    border-radius: 15px;;
+    cursor: pointer;
+    text-align: center;
+    line-height: 25px;
+}
 a.btn-valid {
     border-radius: 10px;
     background-color: rgb(243, 41, 41);
@@ -103,19 +115,7 @@ li {
     font-size: 1.8rem;
 }
 
-.logostart {
-    font-size: 1.5rem;
-    color: rgb(224, 134, 15);
-    text-shadow: rgba(85, 60, 37, 0.9) 1px 1px 5px;
-    font-size: 3rem;
-}
 
-.logomiddle {
-    font-size: 3rem;
-    color: rgb(255, 215, 0);
-    text-shadow: rgba(250, 240, 182, 0.9) 0 0 15px;
-    font-size: 3.1rem;
-}
 
 /*-------- fin gestion header   */
 
@@ -157,6 +157,27 @@ main {
     display: none;
 }
 
+.pagehotel{
+    /* border:white solid 1px; */
+    display:flex;
+    flex-direction: column;
+    background-color: #383838;;
+    justify-content:center;
+}
+
+.img_presentationhotel{
+    width:100%;
+    transform:translatex(-10px);
+    margin:10px;
+    padding:10px;
+}
+
+main p{
+    text-align: justify;
+    padding:10px;
+    color:rgb(255, 255, 255);
+    font-size: 1.6rem;
+}
 /*small device*/
 @media screen and (max-width:767.98px) {
     .navbar-links {
@@ -354,10 +375,7 @@ main {
     /* transition: border-color 0.8s; */
 }
 
-/* .form__field:focus {
-    border-bottom: 2px solid rgb(208, 243, 7);
-    background-color: rgba(204, 230, 111, .1);
-} */
+
 
 .field {
     width: 65px;
@@ -437,7 +455,7 @@ button {
     margin: 10px;
     height: 100%;
     width: 90%;
-    border: rgb(13, 196, 53) solid 2px;
+    /* border: rgb(13, 196, 53) solid 2px; */
 
 }
 
@@ -598,3 +616,4 @@ footer {
     padding: 5px;
     z-index: 40;
 }
+
