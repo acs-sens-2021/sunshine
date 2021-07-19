@@ -1,0 +1,600 @@
+/* code couleur  
+fond bleu = rgb(84, 155, 247)
+6319981562's
+*/
+:root {
+    font-size: 12px;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #383838;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/********************************************
+*                                           *          
+*           gestion du flex                 *
+*                  debut                    *
+*********************************************/
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexac {
+    align-items: center;
+}
+
+.flexdc {
+    flex-direction: column;
+}
+
+.flexjc {
+    justify-content: center;
+}
+
+.flexspar {
+    justify-content: space-around;
+}
+
+.flexspb {
+    justify-content: space-between;
+}
+
+/* --------- fin gestion du flex------------*/
+
+header {
+    position: fixed;
+    top: 0;
+    height: 15%;
+    width: 100vw;
+    /* background-color: rgb(84, 155, 247); */
+    z-index: 40;
+}
+
+h1 {
+    color: red;
+    font-size: 2rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    height: 30px;
+    /* border: white solid 3px; */
+    cursor: pointer;
+}
+
+a.btn-valid {
+    border-radius: 10px;
+    background-color: rgb(243, 41, 41);
+    line-height: 10px;
+    padding: 5px;
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+    justify-self: flex-end;
+}
+
+li {
+    list-style-type: none;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.logostart {
+    font-size: 1.5rem;
+    color: rgb(224, 134, 15);
+    text-shadow: rgba(85, 60, 37, 0.9) 1px 1px 5px;
+    font-size: 3rem;
+}
+
+.logomiddle {
+    font-size: 3rem;
+    color: rgb(255, 215, 0);
+    text-shadow: rgba(250, 240, 182, 0.9) 0 0 15px;
+    font-size: 3.1rem;
+}
+
+/*-------- fin gestion header   */
+
+main {
+    height: 80vh;
+    width: 95vw;
+    padding: 10px;
+    /*     provisoir juste pour visu le border ci dessous   */
+    /* border: rgb(49, 245, 23) solid 1px; */
+    transform: translatey(10px);
+}
+
+/* traitement bar naviguation */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    padding: 10px;
+    color: #f0f0f0;
+    background: rgb(22, 117, 141);
+}
+
+.navbar-links {
+    display: flex;
+    
+}
+
+.navbar-link {
+    padding: 0 10px;
+}
+
+.navbar-link>a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+.burger {
+    display: none;
+}
+
+/*small device*/
+@media screen and (max-width:767.98px) {
+    .navbar-links {
+        display: flex;
+        flex-direction: column;
+        width: 0;
+        height: calc(100vh - 65px);
+        position: absolute;
+        top: 65px;
+        right: 0;
+        background: #000;
+        transition:all .5s ease-in-out;
+        ;
+    }
+
+    .show-nav .navbar-links {
+        width: 100vw;
+        transform: translateX(0);
+    }
+    .navbar__link {    
+        transform: translateX(101%);
+        transition: all .5s ease-in-out;
+      }
+      .show-nav .navbar-link {
+              transform: translateX(0);
+    }
+
+    .navbar-link > a {
+        display: block;
+        padding: 1rem;
+        font-size: 1.6rem;
+        color:#f0f0f0;
+        transition: all .4s ease-in-out;
+    }
+
+    .navbar-link > a:hover {
+
+        padding-left: 2rem;
+        letter-spacing: 5px;
+
+    }
+
+    /***toglle menu***/
+    .burger {
+        display:block;
+        position:relative;
+        padding:0;
+        width:45px;
+        height:45px;
+        border:none;
+        background:transparent;
+        cursor:pointer;
+    }
+
+    .bar {
+        display: block;
+        width: 45px;
+        height: 4px;
+        background: #ddd;
+        border-radius: 3px;
+        transition:all .5s ease-in-out;
+    }
+    
+    .bar::before,
+    .bar::after {
+        content: "";
+        width: 45px;
+        height: 4px;
+        position: absolute;
+        left: 0;
+        background: #ddd;
+        border-radius: 3px;
+        transition:all .5s ease-in-out;
+    }
+
+    .bar::before {
+        transform: translateY(-12px);
+    }
+   
+
+    .bar::after {
+        transform: translateY(12px);
+    }
+    .show-nav .bar{
+        width: 0;
+        background: transparent;
+    }
+    .show-nav .bar::before{
+        transform: rotate(45deg);
+    }
+    .show-nav .bar::after{
+        transform: rotate(-45deg);
+    }
+
+}
+
+/*meduim devices*/
+@media screen and (min-width:768px) {
+    .navbar-link > a::after {
+        display: block;
+        content: "";
+        width: 0;
+        height: 2px;
+        background: #ddd;
+        transition: width .4s;
+    }
+
+    .navbar-link:hover > a::after {
+        width: 100%;
+    }
+}
+
+
+
+.container {
+    position: relative;
+    color: white;
+}
+
+.container2 {
+    position: relative;
+    transform: translatey(520px);
+    color: white;
+}
+
+.nameclient {
+    color: white;
+    font-size: 2rem;
+
+}
+
+.reservation {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    word-break: break-word;
+}
+
+.coupemot {
+    text-align: center;
+    word-break: break-word;
+}
+
+.compris {
+    font-size: 1.4rem;
+    color: red;
+    margin: 30px;
+    padding: 20px;
+}
+
+#hotel-select {
+    align-items: center;
+    width: 100px;
+    transform: translatex(-15px);
+}
+
+.arrive-depart {
+    /* border: green solid 1px; */
+    background-color: rgba(255, 255, 255, 0);
+    width: 75%;
+    height: 50px;
+    margin: 10px;
+    transform: translatex(-25px);
+}
+
+.adultenfantchambre {
+    background-color: rgba(255, 255, 255, 0);
+    /* border:red solid 1px; */
+    width: 100%;
+    height: 30px;
+    margin: 5px;
+    transform: translatex(10px);
+}
+
+.group {
+    position: relative;
+    padding: 15px 0 0;
+    margin: 5px;
+    width: 100%;
+    height: 60px;
+    /* border:rgb(78, 17, 221) solid 2px; */
+}
+
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    /* border-bottom: 2px solid rgb(243, 7, 7); */
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 7px 0;
+    border-radius: 10px;
+    /* background: transparent; */
+    /* transition: border-color 0.8s; */
+}
+
+/* .form__field:focus {
+    border-bottom: 2px solid rgb(208, 243, 7);
+    background-color: rgba(204, 230, 111, .1);
+} */
+
+.field {
+    width: 65px;
+}
+
+.form__label {
+    position: absolute;
+    top: -2px;
+    width: 100px;
+    left: -5px;
+    display: block;
+    font-size: 1rem;
+    color: rgb(236, 67, 25);
+    transition: .5s;
+}
+
+.form__label2 {
+    position: absolute;
+    top: -5px;
+    width: 100px;
+    left: 5px;
+    display: block;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+p.label_connexion {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100px;
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+    color: rgb(236, 67, 25);
+    transition: .5s;
+}
+
+.form__field:focus .form__label {
+    color: rgb(236, 204, 25);
+}
+
+button {
+    margin-top: 15px;
+    width: 100px;
+    height: 30px;
+}
+
+/*-------------------deb posdown  ----------------*/
+
+.pos {
+
+    width: 80%;
+    margin: 10px;
+    background-color: rgba(218, 148, 82, .1);
+    box-shadow: white 0 0 10px;
+    height: 50%;
+    overflow: hidden;
+    /******************????????????????????*******************/
+}
+
+.posup {
+    /* border: #e43936 solid 1px; */
+    color: blue;
+}
+
+.posdown {
+    opacity: 1;
+    height: 50%;
+    /* border:red solid 1px; */
+}
+
+
+
+.apercu {
+    margin: 10px;
+    height: 100%;
+    width: 90%;
+    border: rgb(13, 196, 53) solid 2px;
+
+}
+
+.img_presentation {
+    position: relative;
+    opacity: 0.6;
+    width: 180px;
+    z-index: 1;
+
+}
+
+.img_presentation2 {
+    position: relative;
+    opacity: 0.6;
+    width: 300px;
+    z-index: 1;
+
+}
+
+.img_presentation::before {
+    content: '';
+    position: absolute;
+    background-color: #13e213;
+    width: 100%;
+    height: 100%;
+    bottom: -1px;
+    right: 20px;
+    z-index: 2;
+
+
+}
+
+.img-man {
+    width: 100px;
+}
+
+.descrip_hotel {
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.namehotel {
+    font-size: 3rem;
+    color: blue;
+    text-shadow: white 0 0 4px;
+}
+
+.text_hotel {
+    color: white;
+    font-size: 1rem;
+    padding: 4px;
+}
+
+.textpricehotel {
+    position: relative;
+    font-size: 1rem;
+    color: rgb(252, 17, 76);
+}
+
+.textpricehotel2 {
+    position: relative;
+    font-size: 2rem;
+    color: rgb(223, 213, 215);
+}
+
+.textpricehotel:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 80px;
+    bottom: -2px;
+    z-index: 50;
+    background-color: cornsilk;
+}
+
+.textpricehotel:after {
+    position: absolute;
+    height: 10px;
+    width: 24px;
+    /* background-color: rgba(14, 206, 24, 0.3); */
+    font-size: 1rem;
+    content: 'TTC';
+    color: white;
+    top: 0;
+    right: -30px;
+
+}
+
+.pricehotel {
+    font-size: 2rem;
+    color: crimson;
+}
+
+
+
+.bandtrans {
+    height: 200px;
+}
+
+.container3 {
+    position: relative;
+    color: white;
+    box-shadow: #13e213 0 0 20px;
+    height:90vh;
+    width: 90%;
+}
+
+.dash {
+    position: relative;
+    height: 80%;
+    border:white solid 1px;
+    background-color: #bea4a4;
+    margin:10px;
+    padding:10px;border-radius: 5px;
+    color:black;
+}
+
+.dash1 {
+    height: 100%;
+    width: 45%;
+    /* background-color: rgb(177, 21, 164); */
+   
+}
+
+.dash2 {
+    height:100%;
+    width: 45%;
+    /* background-color: rgb(13, 204, 211); */
+    
+}
+
+.dash3 {
+    height:100%;
+    width: 45%;
+    /* background-color: rgb(13, 204, 211); */
+    
+}
+
+
+.container4{
+    height:90vh;
+    width:90vw;
+    background-color: rgb(119, 40, 40);
+    color:white;
+}
+/*-------------------Footer----------------------------*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    /* background-image: url(/img/vag_inf.svg); */
+    background-color: rgb(22, 117, 141);
+    color: white;
+    font-size: 1.4rem;
+    text-decoration: underline;
+    padding: 5px;
+    z-index: 40;
+}
