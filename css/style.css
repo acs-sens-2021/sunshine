@@ -71,6 +71,7 @@ header {
 h1 {
     color: red;
     font-size: 2rem;
+    text-align: center;
 }
 
 a {
@@ -122,11 +123,12 @@ li {
 /*-------- fin gestion header   */
 
 main {
-    width: 80%;
-    min-height:83vh;
+    width: 100%;
+    min-height:85vh;
     margin: auto;
     padding: 20px;
-    margin-top: 70px;
+    padding-top: 40%;
+    margin-top: 60px;
 }
 
 /* traitement bar naviguation */
@@ -442,8 +444,8 @@ button {
 
 .pos {
 
-    width: 80%;
-    margin: 10px;
+    width: 90%;
+    margin: auto;
     background-color: rgba(218, 148, 82, .1);
     box-shadow: white 0 0 10px;
     height: 50%;
@@ -741,5 +743,6 @@ footer {
         font-size: 11px
     }
 }
+
 
 /**************************************************************************/
