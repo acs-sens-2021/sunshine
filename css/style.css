@@ -123,6 +123,7 @@ li {
 
 main {
     width: 80%;
+    min-height:83vh;
     margin: auto;
     padding: 20px;
     margin-top: 70px;
@@ -133,7 +134,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 65px;
+    height: 80px;
     padding: 10px;
     color: #f0f0f0;
     background: rgb(22, 117, 141);
@@ -168,17 +169,17 @@ main {
 
 .img_presentationhotel {
     width: 100%;
-    /* transform: translatex(-10px); */
+   
     margin: 10px;
     padding: 10px;
 }
 
-/* main p {
+main p {
     text-align: justify;
     padding: 10px;
     color: rgb(255, 255, 255);
     font-size: 1.6rem;
-} */
+}
 
 
 .sousprincipale1 {
@@ -565,13 +566,6 @@ button {
 
 
 
-.bandtrans {
-
-    bottom: 0;
-    height: 200px;
-    width: 300px;
-    /* background-color: rgb(22, 235, 68); */
-}
 
 .container3 {
     position: relative;
