@@ -16,10 +16,6 @@ fond bleu = rgb(84, 155, 247)
 
 body {
     width: 100vw;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
     background-color: #383838;
     
 }
@@ -64,14 +60,14 @@ header {
     top: 0;
     height: 15%;
     width: 100vw;
-    /* background-color: rgb(84, 155, 247); */
     z-index: 40;
 }
 
 h1 {
     color: red;
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
+    margin:10px;
 }
 
 a {
@@ -79,7 +75,6 @@ a {
     text-decoration: none;
     height: 30px;
     width: 50%;
-    /* border: white solid 3px; */
     cursor: pointer;
 }
 
@@ -87,27 +82,27 @@ a.btn_hotel {
     color: white;
     text-decoration: none;
     background-color: rgb(243, 41, 41);
-    height: 50px;
-    width: 80px;
+    font-size: 2rem;
     border-radius: 15px;
-    ;
+    line-height: 30px;
     cursor: pointer;
     text-align: center;
-    line-height: 25px;
+    
 }
 
 a.btn-valid {
     border-radius: 10px;
-    margin: 10px;
+    margin: 60px;
     background-color: rgb(243, 41, 41);
     line-height:20px;
     padding: 5px;
     text-align: center;
     
+    
 }
 
 ul {
-    width: 100%;
+    width: 50%;
     list-style: none;
     justify-self: flex-end;
 }
@@ -116,6 +111,7 @@ li {
     list-style-type: none;
     color: white;
     font-size: 1.8rem;
+    
 }
 
 
@@ -127,7 +123,7 @@ main {
     min-height:85vh;
     margin: auto;
     padding: 20px;
-    padding-top: 40%;
+    padding-top: 6%;
     margin-top: 60px;
 }
 
@@ -343,8 +339,15 @@ main p {
     padding: 20px;
 }
 
+.class_input
+{
+    height:40px;
+    margin:20px;
+}
+
 #hotel-select {
     align-items: center;
+    text-align: center;
     width: 100px;
     transform: translatex(-15px);
 }
@@ -354,8 +357,9 @@ main p {
     background-color: rgba(255, 255, 255, 0);
     width: 75%;
     height: 50px;
-    margin: 10px;
-    transform: translatex(-25px);
+    margin: 35px;
+    transform: translatex(-30px);
+    /* align-items: center; */
 }
 
 .adultenfantchambre {
@@ -398,11 +402,11 @@ main p {
 
 .form__label {
     position: absolute;
-    top: -2px;
+    top: 9px;
     width: 100px;
     left: -5px;
     display: block;
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: rgb(236, 67, 25);
     transition: .5s;
 }
@@ -518,24 +522,27 @@ button {
     font-size: 3rem;
     color: blue;
     text-shadow: white 0 0 4px;
+    margin:20px;
 }
 
 .text_hotel {
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 4px;
+    text-align: center;
 }
 
 .textpricehotel {
     position: relative;
     font-size: 1rem;
     color: rgb(252, 17, 76);
+    margin:20px;
 }
 
 .textpricehotel2 {
     position: relative;
     font-size: 2rem;
-    color: rgb(223, 213, 215);
+    color: rgb(195, 236, 13);
 }
 
 .textpricehotel:before {
@@ -558,12 +565,14 @@ button {
     color: white;
     top: 0;
     right: -30px;
+    
 
 }
 
 .pricehotel {
     font-size: 2rem;
     color: crimson;
+    margin:20px;
 }
 
 
@@ -687,6 +696,7 @@ footer {
     padding: 8px 12px;
     position: absolute;
     top: 0;
+    background-color: rgba(0, 0, 0,.8);
 }
 
 /* The dots/bullets/indicators */
