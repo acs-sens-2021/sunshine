@@ -115,7 +115,6 @@ li {
 }
 
 
-
 /*-------- fin gestion header   */
 
 main {
@@ -123,8 +122,12 @@ main {
     min-height:85vh;
     margin: auto;
     padding: 20px;
-    padding-top: 6%;
+    padding-top: 10%;
     margin-top: 60px;
+    text-align:center;
+}
+.img_cb{
+    width:100%;
 }
 
 /* traitement bar naviguation */
@@ -342,7 +345,7 @@ main p {
 .class_input
 {
     height:40px;
-    margin:20px;
+    margin: 20px;  
 }
 
 #hotel-select {
@@ -402,13 +405,18 @@ main p {
 
 .form__label {
     position: absolute;
-    top: 9px;
+    top: -10px;
     width: 100px;
-    left: -5px;
+    left: -2px;
     display: block;
     font-size: 1.4rem;
     color: rgb(236, 67, 25);
     transition: .5s;
+}
+
+
+label{
+    color: white;
 }
 
 .form__label2 {
@@ -488,13 +496,14 @@ button {
 
 .img_presentation2 {
 
-    opacity: 0.6;
+    opacity: 1;
     width: 100%;
     z-index: 1;
     vertical-align: middle;
-
+text-align:center;
 
 }
+
 
 .img_presentation::before {
     content: '';
