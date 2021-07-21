@@ -696,12 +696,15 @@ footer {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
+.prev{
+    left:0;
+}
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
+/* .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-}
+} */
 
 /* Number text (1/ 4 etc) */
 .numbertext {
@@ -788,5 +791,5 @@ span{
 }
 .lien{
     color: rgba(255, 123, 0, 0.719);
-    
+    text-decoration: underline;
 }
