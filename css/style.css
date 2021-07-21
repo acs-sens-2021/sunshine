@@ -69,6 +69,11 @@ h1 {
     text-align: center;
     margin:10px;
 }
+h2{
+    color:rgba(102, 255, 0, 0.945);
+    font-size: 2rem;
+    text-align: center;
+}
 
 a {
     color: white;
@@ -554,7 +559,7 @@ text-align:center;
     color: rgb(195, 236, 13);
 }
 
-.textpricehotel:before {
+/* .textpricehotel:before {
     content: '';
     position: absolute;
     height: 1px;
@@ -562,7 +567,7 @@ text-align:center;
     bottom: -2px;
     z-index: 50;
     background-color: cornsilk;
-}
+} */
 
 .textpricehotel:after {
     position: absolute;
@@ -765,3 +770,21 @@ footer {
 
 
 /**************************************************************************/
+.form-résa > form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+span{
+    color:red;
+}
+.form-résa >  form > label{
+    color: rgb(255, 255, 255);
+}
+.lien{
+    color: rgba(255, 123, 0, 0.719);
+    text-decoration:
+}
