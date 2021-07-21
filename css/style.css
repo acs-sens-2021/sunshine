@@ -659,7 +659,8 @@ footer {
 
 /***********************************************carousel*************************/
 .mySlides {
-    display: none
+    display: none;
+    padding-bottom:10px ;
 }
 
 .carousel {
