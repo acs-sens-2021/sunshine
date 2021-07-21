@@ -768,12 +768,14 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 10px;
+    
 }
 span{
     color:red;
 }
 .form-résa >  form > label{
     color: rgb(255, 255, 255);
+    padding: 10px;
 }
 .lien{
     color: rgba(255, 123, 0, 0.719);
