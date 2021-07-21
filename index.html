@@ -31,7 +31,7 @@
             <form action="page1.html" method="post">
                 <section class="flxdcol flexac flex flexdc flxjspar">
 
-                    <div class="group field">
+                    <!-- <div class="group field"> -->
                         <label for="hotel-select" class="form__label">Choix hôtel</label>
 
                         <select name="choixhotel" class="class_input" id="hotel-select" onChange="Lien()">
@@ -41,21 +41,21 @@
                             <option value="goldfish" selected>Goldfish</option>
                         </select>
                         
-                    </div>
+                    <!-- </div> -->
 
                     <section class="arrive-depart flex flexspb">
                         <div class="group field">
+                            <label for="arrive" class="form__label">Arrivé</label>
                             <input type="date" class="class_input" id="arrive" name="arrive" minlength="4" maxlength="25" value="2021-07-19"
                                 min="2021-07-01" max="2030-12-31" required>
 
-                            <label for="arrive" class="form__label">Arrivé</label>
                         </div>
                         <div class="group field">
+                            <label for="depart" class="form__label">départ</label>
                             <input type="date" class="class_input" id="depart" name="depart" minlength="4" maxlength="25" value="2021-07-30"
                                 min="2021-30-08" max="2030-12-31" required>
-                            <label for="depart" class="form__label">
-                                départ
-                            </label>
+                                
+                            
                         </div>
                     </section>
 
